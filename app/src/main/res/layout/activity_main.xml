@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FBBB4D"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bmjua"
+        android:gravity="center"
+        android:text="취해도 할 건 하자"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="총 식사금액"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/Food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/bmjua"
+            android:hint="총 식사금액을 입력하세요"
+            android:inputType="number"
+            android:maxLength="25"
+            android:textColor="#000000"
+            android:textColorHint="#75746C" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="술값"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/Drink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/bmjua"
+            android:hint="술값을 입력하세요"
+            android:inputType="number"
+            android:maxLength="25"
+            android:textColor="#000000"
+            android:textColorHint="#75746C" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="음료수값"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/Sugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/bmjua"
+            android:hint="음료수값을 입력하세요(물만 마셨으면 0)"
+            android:inputType="number"
+            android:maxLength="25"
+            android:textColor="#000000"
+            android:textColorHint="#75746C" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="술 마신 사람"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/AllEat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/bmjua"
+            android:hint="술을 마신 사람 수를 입력하세요"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#75746C" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bmjua"
+            android:gravity="center"
+            android:text="안 마신 사람"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/OnlyFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/bmjua"
+            android:hint="음료수나 물만 마신 사람 수를 입력하세요"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#75746C" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/resultButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bmjua"
+            android:text="계산하기"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="#FF9800" />
+
+        <Button
+            android:id="@+id/ClearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bmjua"
+            android:text="초기화"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="#FF9800" />
+    </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6800203142449385/4295244367">
+        </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+</LinearLayout>
